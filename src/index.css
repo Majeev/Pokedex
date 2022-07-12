@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
 }
 html {
     font-size: 62.5%;
@@ -9,9 +12,25 @@ html {
 
 body {
     background-color: #fff;
+    font-family: 'Lato', sans-serif;
 }
 
 :root {
-    --main-green: rgb(121, 158, 143);
+    --main-green: #7DB46CFF;
+}
 
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
 }

@@ -1,0 +1,45 @@
+.home, .home__search, form {
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--main-green);
+}
+
+.home > * {
+    margin: 1rem;
+    color: white;
+}
+.home h1, .icon {
+    font-size: 3rem;
+}
+.home input {
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin: 0 1rem;
+    max-width: 300px;
+    text-align: center;
+}
+
+.icon {
+    transform: translateY(5%);
+}
+.home span {
+    align-self: center;
+}
+
+
+@media (max-width: 600px) {
+    .home span {
+        display: none;
+    }
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+}
