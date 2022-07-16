@@ -27,9 +27,14 @@ function App() {
     }, [])
 
     const pokemonsSort = pokemons.sort((a, b) => a.id - b.id)
+
+    const filter = (pokemon) => {
+        // setPokemons(pokemons.filter(poke => poke.name === pokemon))
+    }
+
     return (
         <div className="App">
-            <Header/>
+            <Header onChange={filter} />
             <div className="wrapper">
                 {pokemonsSort.map((pokemonStats, index) =>
                                       <Pokemon
