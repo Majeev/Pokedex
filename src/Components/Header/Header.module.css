@@ -6,6 +6,7 @@
 .home {
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 5rem;
     background-color: var(--main-green);
 }
 
