@@ -1,12 +1,11 @@
 import css from './Header.module.css'
-import {BiSearchAlt} from "react-icons/bi";
+
 import {useState} from "react";
 
 const Header = ({onChange}) => {
-    const [pokemon, setPokemon] = useState('')
+
     const searchPokemonHandler = (e) => {
-        setPokemon(e.target.value)
-        onChange(pokemon)
+        onChange(e.target.value)
     }
     return (
         <header className={css.home}>
