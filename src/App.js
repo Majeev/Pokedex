@@ -29,7 +29,7 @@ function App() {
     }, [])
 
     const filter = (pokemon) => {
-        setFilteredPokemons(pokemon)
+        setFilteredPokemons(pokemon.toLowerCase())
     }
 
     const filteredPokes = pokemons.sort((a, b) => a.id - b.id)

@@ -10,7 +10,7 @@ const Pokemon = ({id, image, name, type}) => {
                             <img src={image} alt={name}/>
                         </div>
                         <div className={css.pokemon__description}>
-                            <h2>{name}</h2>
+                            <h2>{name.charAt(0).toUpperCase() + name.slice(1)}</h2>
                             <span>Type: {type}</span>
                         </div>
                     </div>
