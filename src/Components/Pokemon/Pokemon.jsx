@@ -4,7 +4,7 @@ import css from './Pokemon.module.css'
 const Pokemon = ({id, image, name, type}) => {
 
     return (
-                    <div className={`${css.pokemon__container} ${type}`}>
+                    <div className={`${css.pokemon__container} ${type}`} onClick={() => console.log({name})}>
                         <span className={css.pokemon__description}>#{id}</span>
                         <div className={css.pokemon__picture}>
                             <img src={image} alt={name}/>

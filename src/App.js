@@ -33,19 +33,19 @@ function App() {
     }
 
     const filteredPokes = pokemons.sort((a, b) => a.id - b.id)
-                                  .filter(poke => poke.name.toLowerCase()
+                                  .filter(pokemon => pokemon.name.toLowerCase()
                                                       .includes(filteredPokemons))
 
     return (
         <div className="App">
             <Header onChange={filter}/>
             <div className="wrapper">
-                {filteredPokes.map((pokemonStats, index) => <Pokemon
+                {filteredPokes.map((pokemonDetails, index) => <Pokemon
                     key={index}
-                    id={pokemonStats.id}
-                    image={pokemonStats.sprites.other.dream_world.front_default}
-                    name={pokemonStats.name}
-                    type={pokemonStats.types[0].type.name}
+                    id={pokemonDetails.id}
+                    image={pokemonDetails.sprites.other.dream_world.front_default}
+                    name={pokemonDetails.name}
+                    type={pokemonDetails.types[0].type.name}
                 />)}
             </div>
         </div>
