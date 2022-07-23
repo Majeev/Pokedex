@@ -7,7 +7,7 @@ const Pokemon = ({id, image, name, type}) => {
                     <div className={`${css.pokemon__container} ${type}`} onClick={() => console.log({name})}>
                         <span className={css.pokemon__description}>#{id}</span>
                         <div className={css.pokemon__picture}>
-                            <img src={image} alt={name}/>
+                            <img src={image} alt={name} loading="lazy"/>
                         </div>
                         <div className={css.pokemon__description}>
                             <h2>{name.charAt(0).toUpperCase() + name.slice(1)}</h2>
