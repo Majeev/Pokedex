@@ -1,4 +1,11 @@
 # Pokedex
+Check it live!
+```
+https://majeev.github.io/Pokedex/
+```
+
+or
+
 To run this project, clone repository and install it locally using npm:
 ```
 $ npm install
