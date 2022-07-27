@@ -44,8 +44,12 @@ function App() {
                     key={index}
                     id={pokemonDetails.id}
                     image={pokemonDetails.sprites.other.dream_world.front_default}
+                    img={pokemonDetails.sprites.back_default}
                     name={pokemonDetails.name}
                     type={pokemonDetails.types[0].type.name}
+                    exp={pokemonDetails.base_experience}
+                    weight={pokemonDetails.weight}
+                    ability={pokemonDetails.abilities[0].ability.name}
                 />)}
             </div>
         </div>

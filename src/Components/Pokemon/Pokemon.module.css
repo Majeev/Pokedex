@@ -9,7 +9,7 @@
     margin: 15px;
     min-height: 200px;
     min-width: 230px;
-
+    cursor:pointer;
 }
 
 .pokemon__container > * {
@@ -46,3 +46,4 @@
 .pokemon__description, .pokemon__description span {
     font-size: 1.3rem;
 }
+

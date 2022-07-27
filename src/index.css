@@ -121,3 +121,7 @@ h2 {
 .flying {
     background-color: rgb(189, 185, 184);
 }
+
+.none {
+    display: none;
+}
