@@ -17,11 +17,13 @@ body {
 }
 
 :root {
-    --main-green: #7DB46CFF;
+    --main-green: #7db46cff;
     --main-radius: 10px;
 }
 
-a, a:hover, a:visited {
+a,
+a:hover,
+a:visited {
     text-decoration: none;
     color: inherit;
 }
@@ -33,7 +35,12 @@ button {
     cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 400;
 }
 
@@ -46,11 +53,10 @@ h2 {
     justify-content: center;
     max-width: 80%;
     margin: 0 auto;
-
 }
 
 .fire {
-    background-color: #fd7d24
+    background-color: #fd7d24;
 }
 
 .grass {
@@ -58,7 +64,7 @@ h2 {
 }
 
 .water {
-    background-color: rgb(69, 146, 196)
+    background-color: rgb(69, 146, 196);
 }
 
 .poison {
@@ -86,9 +92,8 @@ h2 {
 }
 
 .fairy {
-    background-color: rgb(253, 185, 233)
+    background-color: rgb(253, 185, 233);
 }
-
 
 .psychic {
     background-color: rgb(243, 102, 185);
@@ -107,7 +112,7 @@ h2 {
 }
 
 .dragon {
-    background-color: rgb(241, 110, 87)
+    background-color: rgb(241, 110, 87);
 }
 
 .ice {
@@ -124,4 +129,30 @@ h2 {
 
 .none {
     display: none;
+}
+
+.loader {
+    animation: spin 2s linear infinite;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: url(./assets/Pokemon.svg);
+    border-radius: 50%;
+    border: 16px solid #000000;
+    border-top: 16px solid #3498db;
+    max-width: 300px;
+    width: 200px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
